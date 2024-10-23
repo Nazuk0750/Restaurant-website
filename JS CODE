@@ -13,6 +13,21 @@ navLinks.addEventListener("click", (e) => {
   menuBtnIcon.setAttribute("class", "ri-menu-line");
 });
 
+//pendulum image
+const image = document.getElementById("pendulumImage");
+let angle = 0;
+let direction = 1;
+
+function pendulumEffect() {
+  angle += direction * 5;
+  if (angle > 45 || angle < -45) {
+    direction *= -1;
+  }
+  image.style.transform = `rotate(${angle}deg)`;
+}
+
+setInterval(pendulumEffect, 100);
+
 const scrollRevealOption = {
   distance: "50px",
   origin: "bottom",
@@ -58,5 +73,5 @@ document
     // You can process the form data or send it to a server here
 
     // Redirect to another" website
-    window.location.href = "file:///D:/frontend.html/html/table.html";
+    window.location.href = "file:///D:/frontend.html/html/table.html"; // Replace with your desired URL
   });
