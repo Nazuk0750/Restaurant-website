@@ -3,10 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="fee2.css" />
 
     <title>Meal Magic</title>
@@ -35,10 +31,12 @@
       <div class="section__container header__container">
         <div class="header__image">
           <img
+            id="pendulumImage"
             src="https://www.shutterstock.com/image-photo/table-filled-dishes-food-set-600nw-2477073165.jpg"
             alt="header"
           />
         </div>
+
         <div class="header__content">
           <h2>IT IS GOOD TIME FOR THE GREAT TASTE OF YOUR MEAL</h2>
           <h1>MEMORABLE<br /><span>WEEK</span></h1>
@@ -61,7 +59,13 @@
       </div>
     </section>
 
-    <section class="section__container order__container" id="menu">
+    
+        
+       <ul class="nav__links">
+        <li><a href="main-order.html">ORDER NOW </a></li>
+       </ul> 
+
+      <section class="section__container order__container" id="menu"> 
       <h3>ALWAYS TASTEY FOOD</h3>
       <h2 class="section__header">CHOOSE & ENJOY</h2>
       <p class="section__description">
@@ -72,39 +76,30 @@
       <div class="order__grid">
         <div class="order__card">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV2KJLKM3iwZpZNfYcXkN393invKMojzox9eP4rsUW8AeSqiRwwQU30320NrngNjZ6bVI&usqp=CAU"
+            src="https://www.realsimple.com/thmb/uXgyVhId8EdPmXIg02ZumfTnJVc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/roasted-pickled-cauliflowers-sandwiches-romesco_0_0_0-9cce7c8e663749c9929e93fb15077670.jpg"
             alt="order"
           />
-          <h4>Chicken Burger</h4>
-          <p>
-            Sink your teeth into the timeless perfection of our Chicken Burger,
-            an experience that never goes out of style.
-          </p>
-          <button class="btn">ORDER NOW</button>
+          <h4>Main Course</h4>
+          <p>"Stay cheesy and keep eating delicious food."</p>
+          <button class="btn" id="orderMainCourse">ORDER NOW</button>
         </div>
         <div class="order__card">
           <img
-            src="https://www.madhuseverydayindian.com/wp-content/uploads/2022/11/easy-vegetable-biryani.jpg"
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/easy-chocolate-molten-cakes-37a25eb.jpg"
             alt="order"
           />
-          <h4>Karachi Biryani</h4>
-          <p>
-            Embrace the vibrant flavors of our Veggie Delight Burger, a
-            celebration of freshness and wholesome goodness.
-          </p>
-          <button class="btn">ORDER NOW</button>
+          <h4>Deserts</h4>
+          <p>"Sorry!! , I'm busy eating cake tonight"</p>
+          <button class="btn" id="orderDesserts" >ORDER NOW</button>
         </div>
         <div class="order__card">
           <img
-            src="https://www.foodandwine.com/thmb/wKe5ZkGmhqXHiCow-SwRqJmygoY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cacio-e-plantain-FT-RECIPE0721-d750051665df4a84a9a305475f98948c.jpg"
+            src="https://therecipecritic.com/wp-content/uploads/2023/06/virgin-mojito.jpg"
             alt="order"
           />
-          <h4>Phenomenal Pasta</h4>
-          <p>
-            Indulge in a symphony of smoky, savory flavors with our BBQ Bacon
-            Burger, grilled and topped with crispy bacon.
-          </p>
-          <button class="btn">ORDER NOW</button>
+          <h4>Beverages</h4>
+          <p>Fizz, Rhyme, Pop! Life's a Nonstop</p>
+          <button class="btn" id="orderBeverages">ORDER NOW</button>
         </div>
       </div>
     </section>
@@ -130,72 +125,74 @@
           </p>
         </div>
       </div>
-    </section>
+    </section> 
 
-    <section class="reservation" id="contact">
-      <div class="section__container reservation__container">
-        <h3>RESERVATION</h3>
-        <h2 class="section__header">BOOK YOUR TABLE</h2>
-        <form action="/">
-          <input type="text" placeholder="NAME" />
-          <input type="email" placeholder="EMAIL" />
-          <input type="date" placeholder="DATE" />
-          <input type="time" placeholder="TIME" />
-          <input type="number" placeholder="PEOPLE" />
-          <button class="btn" type="submit">BOOK TABLE</button>
-        </form>
-      </div>
-      <img
-        src="https://images.picxy.com/cache/2021/3/26/3b5bb0917ad30902c09a4cce71f716a4.jpg"
-        alt="reservation"
-        class="reservation__bg-1"
-      />
-      <img
-        src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Corndogs-7832ef6.jpg?quality=90&resize=556,505"
-        alt="reservation"
-        class="reservation__bg-2"
-      />
-    </section>
+        <section class="reservation" id="contact">
+          <div class="section__container reservation__container">
+            <h3>RESERVATION</h3>
+            <h2 class="section__header">BOOK YOUR TABLE</h2>
+            <form action="/">
+              <input type="text" placeholder="NAME" />
+              <input type="email" placeholder="EMAIL" />
+              <input type="date" placeholder="DATE" />
+              <input type="time" placeholder="TIME" />
+              <input type="number" placeholder="PEOPLE" />
+              <button class="btn" type="submit">BOOK TABLE</button>
+            </form>
+          </div>
+          <img
+            src="https://images.picxy.com/cache/2021/3/26/3b5bb0917ad30902c09a4cce71f716a4.jpg"
+            alt="reservation"
+            class="reservation__bg-1"
+          />
+          <img
+            src="https://images.immediate.co.uk/production/volatile/sites/30/2022/08/Corndogs-7832ef6.jpg?quality=90&resize=556,505"
+            alt="reservation"
+            class="reservation__bg-2"
+          />
+        </section>
 
-    <footer class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__logo">
-          <h1>Meal Magic</h1>
-        </div>
-        <div class="footer__content">
-          <p>
-            Welcome to Meal Magic Company, where passion for exceptional food
-            and genuine hospitality come together. Our story is one of
-            dedication to crafting the perfect meal experience, from sourcing
-            the finest ingredients to delivering unparalleled taste in every
-            bite.
-          </p>
-          <div>
-            <ul class="footer__links">
-              <li>
-                <span><i class="ri-map-pin-2-fill"></i></span>
-                MG Road, Rajpura , 140401
-              </li>
-              <li>
-                <span><i class="ri-mail-fill"></i></span>
-                mealmagic24@gmail.com
-              </li>
-            </ul>
-            <div class="footer__socials">
-              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
-              <a href="#"><i class="ri-instagram-fill"></i></a>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-              <a href="#"><i class="ri-whatsapp-fill"></i></a>
+        <footer class="footer">
+          <div class="section__container footer__container">
+            <div class="footer__logo">
+              <h1>Meal Magic</h1>
+            </div>
+            <div class="footer__content">
+              <p>
+                Welcome to Meal Magic Company, where passion for exceptional
+                food and genuine hospitality come together. Our story is one of
+                dedication to crafting the perfect meal experience, from
+                sourcing the finest ingredients to delivering unparalleled taste
+                in every bite.
+              </p>
+              <div>
+                <ul class="footer__links">
+                  <li>
+                    <span><i class="ri-map-pin-2-fill"></i></span>
+                    MG Road, Rajpura , 140401
+                  </li>
+                  <li>
+                    <span><i class="ri-mail-fill"></i></span>
+                    mealmagic24@gmail.com
+                  </li>
+                </ul>
+                <div class="footer__socials">
+                  <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+                  <a href="#"><i class="ri-instagram-fill"></i></a>
+                  <a href="#"><i class="ri-twitter-fill"></i></a>
+                  <a href="#"><i class="ri-whatsapp-fill"></i></a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2024 Web Design Mastery. All rights reserved.
-      </div>
-    </footer>
+          <div class="footer__bar">
+            Copyright © 2024 Web Design Mastery. All rights reserved.
+          </div>
+        </footer>
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="script.js"></script>
+      </body>
+    </html>
   </body>
 </html>
