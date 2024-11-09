@@ -11,6 +11,7 @@ menuBtn.addEventListener("click", (e) => {
 navLinks.addEventListener("click", (e) => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "ri-menu-line");
+  1;
 });
 
 //pendulum image
@@ -70,8 +71,21 @@ document
     const time = document.querySelector('input[type="time"]').value;
     const people = document.querySelector('input[type="number"]').value;
 
-    // You can process the form data or send it to a server here
+    window.location.href = "file:///D:/frontend.html/html/table.html";
+  });
+// Add event listeners for the order buttons
+document
+  .getElementById("orderMainCourse")
+  .addEventListener("click", function () {
+    window.location.href = "main-order.html";
+  });
 
-    // Redirect to another" website
-    window.location.href = "file:///D:/frontend.html/html/table.html"; // Replace with your desired URL
+document.getElementById("orderDesserts").addEventListener("click", function () {
+  window.location.href = "file:///D:/frontend.html/html/deserts.html";
+});
+
+document
+  .getElementById("orderBeverages")
+  .addEventListener("click", function () {
+    window.location.href = "beverages.html";
   });
