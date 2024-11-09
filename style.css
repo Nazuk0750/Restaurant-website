@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --primary-color: #42200b;
   --secondary-color: #ffc135;
@@ -8,7 +9,6 @@
   --header-font-1: "Alfa Slab One", serif;
   --header-font-2: "Bebas Neue", sans-serif;
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -72,7 +72,7 @@ body {
 }
 
 .header {
-  background-image: url("assets/header-bg.png");
+  background-image: url("https://t4.ftcdn.net/jpg/05/64/97/31/360_F_564973106_xO0n1BvNmsFy2Sj2SK2Uy2pzH3hDqeDy.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -154,6 +154,14 @@ nav {
 .header__image img {
   max-width: 600px;
   margin-inline: auto;
+  transform-origin: bottom-origin;
+  transition: transform 0.5s ease-in-out;
+}
+.header__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
 .header__content h2 {
