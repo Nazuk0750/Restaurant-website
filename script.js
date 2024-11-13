@@ -58,12 +58,10 @@ ScrollReveal().reveal(".order__card", {
 ScrollReveal().reveal(".event__content", {
   duration: 1000,
 });
-
-// Add event listener for form submission to redirect to another website
 document
   .querySelector('.btn[type="submit"]')
   .addEventListener("click", function (event) {
-    event.preventDefault(); // Prevent the default form submission behavior
+    event.preventDefault(); 
 
     const name = document.querySelector('input[type="text"]').value;
     const email = document.querySelector('input[type="email"]').value;
@@ -73,7 +71,6 @@ document
 
     window.location.href = "file:///D:/frontend.html/html/table.html";
   });
-// Add event listeners for the order buttons
 document
   .getElementById("orderMainCourse")
   .addEventListener("click", function () {
